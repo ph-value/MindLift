@@ -2,9 +2,9 @@ import 'dotenv/config';
 
 export default async function handler(req, res) {
   const { situation, emotions, automaticThought } = req.body || {
-    situation: "Test situation",
-    emotions: { sadness: 5, anger: 2 },
-    automaticThought: "I can't do this.",
+    "situation": "I made a mistake at work during a team meeting.",
+    "emotions": { "embarrassment": 8, "guilt": 7 },
+    "automaticThought": "Everyone thinks I’m bad at my job, and I’ll never recover from this."
   };
 
   const model = 'gpt-3.5-turbo-0125';
